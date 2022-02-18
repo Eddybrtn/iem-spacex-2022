@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iem_spacex_2022/core/viewmodel/launch_viewmodel.dart';
+import 'package:iem_spacex_2022/core/viewmodel/home_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
@@ -8,9 +8,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => LaunchViewModel(),
-      child: Consumer<LaunchViewModel>(
-        builder: (context, LaunchViewModel model, child) => Scaffold(
+      create: (_) => HomeViewModel(),
+      child: Consumer<HomeViewModel>(
+        builder: (context, HomeViewModel model, child) => Scaffold(
           appBar: AppBar(
             title: const Text("SpaceX"),
           ),
